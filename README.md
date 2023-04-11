@@ -19,7 +19,8 @@ Learn what is it required before using Social Awesome Button and how to install 
 Let's assumed that you are using Vue3 as your frontend framework for your project. So you can go through your project, and install this library via `npm` or what package manager that you're prefer
 
 ```bash
-  cd your-project
+  cd your-vue-project
+  # npm
   npm install social-awesome-button
   # yarn
   yarn add social-awesome-button
@@ -58,13 +59,13 @@ export default {
 
 Here is the attributes of this components that you can set
 
-| Prop     | Type             | Required | Description                                                          |
-| :------- | :--------------- | :------- | :------------------------------------------------------------------- |
-| `type`   | `string`         | yes      | possible values are `facebook, instagram, twitter, tiktok or google` |
-| `link`   | `object`         | yes      | `{ href: string; target?: AnchorHTMLAttributes["target"] }`          |
-| `shape`  | `circle\|square` | Optional | default is `circle`                                                  |
-| `dark`   | `boolean`        | Optional | Is it in dark mode or not? default is false                          |
-| `width`  | `number`         | Optional | the dimension of button. default is 40                               |
-| `tootip` | `string`         | Optional | Whether to show tooltip with your message                            |
+| Prop     | Type                                                   | Required | Description                                                 |
+| :------- | :----------------------------------------------------- | :------- | :---------------------------------------------------------- |
+| `type`   | `facebook`\|`twitter`\|`google`\|`instagram`\|`tiktok` | Yes      | typr of social media                                        |
+| `link`   | `object`                                               | Yes      | `{ href: string; target?: AnchorHTMLAttributes["target"] }` |
+| `shape`  | `circle`\|`square`                                     | Optional | The shape of button. default is `circle`                    |
+| `dark`   | `boolean`                                              | Optional | Is it in dark mode or not? default is false                 |
+| `width`  | `number`                                               | Optional | the dimension of button. default is 40                      |
+| `tootip` | `string`                                               | Optional | Whether to show tooltip with your message                   |
 
 <p align="right">(<a href="#readme-top">back to top</a>)
