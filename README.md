@@ -9,9 +9,9 @@ Easy to use social media button collection with [VueJS](https://vuejs.org/) inte
 ## Screenshots
 
 Light Mode
-![Gif](https://github.com/logicspark/social-awesome-button/blob/main/public/light-social-awesome-button.gif)
+![Preview Light Mode](https://github.com/logicspark/social-awesome-button/blob/main/public/light-social-awesome-button.mp4)
 Dark Mode
-![Gif](https://github.com/logicspark/social-awesome-button/blob/main/public/dark-social-awesome-button.gif)
+![Preview Dark Mode](https://github.com/logicspark/social-awesome-button/blob/main/public/dark-social-awesome-button.mp4)
 
 ## Getting Started
 
