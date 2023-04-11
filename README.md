@@ -1,18 +1,70 @@
-# Vue 3 + TypeScript + Vite
+<a id="readme-top"></a>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Social Awesome Button
 
-## Recommended IDE Setup
+Easy to use social media button collection with [VueJS](https://vuejs.org/) integration. Developed by [LogicSpark](https://logicspark.com) team
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-## Type Support For `.vue` Imports in TS
+## Screenshots
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Getting Started
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Learn what is it required before using Social Awesome Button and how to install it quickly. Let's get started!
+
+### Prerequisite
+
+Let's assumed that you are using Vue3 as your frontend framework for your project. So you can go through your project, and install this library via `npm` or what package manager that you're prefer
+
+```bash
+  cd your-project
+  npm install social-awesome-button
+  # yarn
+  yarn add social-awesome-button
+  # pnpm
+  pnpm add social-awesome-button
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)
+
+## Usage/Examples
+
+VueJS usage example
+
+```javascript
+<template>
+  <div id="app">
+    <social-awesome-button
+        type="facebook"
+        :link="{ src: 'https://facebook.com'}"
+    />
+  </div>
+</template>
+
+<script>
+import { SocialAwesomeButton } from 'social-awesome-button'
+
+export default {
+  components: {
+    SocialAwesomeButton,
+  },
+}
+</script>
+```
+
+### Component attributes
+
+Here is the attributes of this components that you can set
+
+| Prop     | Type             | Required | Description                                                          |
+| :------- | :--------------- | :------- | :------------------------------------------------------------------- |
+| `type`   | `string`         | yes      | possible values are `facebook, instagram, twitter, tiktok or google` |
+| `link`   | `object`         | yes      | `{ href: string; target?: AnchorHTMLAttributes["target"] }`          |
+| `shape`  | `circle\|square` | Optional | default is `circle`                                                  |
+| `dark`   | `boolean`        | Optional | Is it in dark mode or not? default is false                          |
+| `width`  | `number`         | Optional | the dimension of button. default is 40                               |
+| `tootip` | `string`         | Optional | Whether to show tooltip with your message                            |
+
+<p align="right">(<a href="#readme-top">back to top</a>)
