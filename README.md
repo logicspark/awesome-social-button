@@ -7,8 +7,7 @@ Easy to use social media button collection with [VueJS](https://vuejs.org/) inte
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Gif](https://github.com/logicspark/social-awesome-button/blob/main/public/social-awesom-button.gif)
 
 ## Getting Started
 
