@@ -6,7 +6,18 @@ Easy to use social media button collection with [VueJS](https://vuejs.org/) inte
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-## Screenshots
+<div align="center">
+  <a href="#sunglasses-screenshots">Screenshots</a> - 
+  <a href="#building_construction-built-with">Built With</a> - 
+  <a href="#rocket-getting-started">Getting Started</a> - 
+  <a href="#fire-usage">Usage</a> -
+  <a href="#books-license">License</a> -
+  <a href="#pray-acknowledgement">Acknowledgement</a>
+</div>
+
+<br>
+
+## :sunglasses: Screenshots
 
 Light Mode
 
@@ -16,7 +27,7 @@ Dark Mode
 
 https://user-images.githubusercontent.com/85727452/231132204-85bbc399-154c-4bd0-8a00-3648548c697e.mp4
 
-## Getting Started
+## :rocket: Getting Started
 
 Learn what is required before using Social Awesome Button and how to install it quickly. Let's get started!
 
@@ -36,7 +47,7 @@ Let's assumed that you are using Vue3 as your frontend framework for your projec
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
-## Usage/Examples
+## :fire: Usage/Examples
 
 VueJS usage example
 
@@ -73,5 +84,17 @@ Here is the attributes of this components that you can set
 | `dark`   | `boolean`                                                  | Optional | Is it in dark mode or not? default is false                                                                                 |
 | `width`  | `number`                                                   | Optional | the dimension of button. default is 40                                                                                      |
 | `tootip` | `string`                                                   | Optional | Whether to show tooltip with your message                                                                                   |
+
+<p align="right">(<a href="#readme-top">back to top</a>)
+
+## :books: License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)
+
+## :pray: Acknowledgement
+* [Img Shields](https://shields.io)
+* [Font Awesome](https://fontawesome.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)
