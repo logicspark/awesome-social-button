@@ -1,10 +1,14 @@
 <a id="readme-top"></a>
 
-# Social Awesome Button
+<a name="readme-top"></a>
+
+<div align="center">
+  <h1>Social Awesome Button</h1>
+</div>
 
 Easy to use social media button collection with [VueJS](https://vuejs.org/) integration. Developed by [LogicSpark](https://logicspark.com) team
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+<br>
 
 <div align="center">
   <a href="#sunglasses-screenshots">Screenshots</a> - 
@@ -13,7 +17,13 @@ Easy to use social media button collection with [VueJS](https://vuejs.org/) inte
   <a href="#fire-usage">Usage</a> -
   <a href="#books-license">License</a> -
   <a href="#pray-acknowledgement">Acknowledgement</a>
+
+  
+  [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+  
 </div>
+
+
 
 <br>
 
