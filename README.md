@@ -37,6 +37,8 @@ Dark Mode
 
 https://user-images.githubusercontent.com/85727452/231132204-85bbc399-154c-4bd0-8a00-3648548c697e.mp4
 
+<p align="right">(<a href="#readme-top">back to top</a>)
+
 ## :building_construction: Built With
 
 Here is a list of frameworks/libraries used to develop Image Resizer
@@ -46,6 +48,8 @@ Here is a list of frameworks/libraries used to develop Image Resizer
 - [![HTML][Html]][html-url]
 - [![CSS][Css]][css-url]
 - [![Jest][Jest]][jest-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)
 
 ## :rocket: Getting Started
 
