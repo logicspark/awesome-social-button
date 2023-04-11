@@ -7,11 +7,12 @@ Easy to use social media button collection with [VueJS](https://vuejs.org/) inte
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Screenshots
+
 ![Gif](https://github.com/logicspark/social-awesome-button/blob/main/public/social-awesom-button.gif)
 
 ## Getting Started
 
-Learn what is it required before using Social Awesome Button and how to install it quickly. Let's get started!
+Learn what is required before using Social Awesome Button and how to install it quickly. Let's get started!
 
 ### Prerequisite
 
