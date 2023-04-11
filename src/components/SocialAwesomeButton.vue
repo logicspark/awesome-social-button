@@ -6,6 +6,7 @@
 		shape?: "circle" | "square";
 		dark?: boolean;
 		width?: number;
+		tooltip?: string;
 	}
 </script>
 <script setup lang="ts">
@@ -14,6 +15,7 @@
 	const type = computed(() => props.type);
 	const shape = computed(() => props.shape ?? "circle");
 	const isDark = computed(() => props.dark ?? false);
+	const tooltip = computed(() => props.tooltip);
 </script>
 <template>
 	<button
@@ -21,9 +23,13 @@
 		type="button"
 		role="button"
 		:data-theme="isDark ? 'dark' : 'light'"
-		:data-width="props.width ?? '40px'"
 		:class="[type, shape]"
 		:style="{ '--width': `${props.width ?? 40}px` }">
+		<span
+			v-if="tooltip"
+			class="sab-tooltip"
+			>{{ tooltip }}</span
+		>
 		<i
 			class="fa-brands"
 			:class="`fa-${type}`"></i>
@@ -45,7 +51,7 @@
 		--width: 40px;
 	}
 	button.social-awesome-button {
-		font-family: inherit;
+		/* font-family: inherit; */
 		box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2),
 			-8px -8px 16px rgba(255, 255, 255, 0.04);
 		border-radius: 8px;
@@ -56,6 +62,9 @@
 		transition: background 0.4s, color 0.5s;
 		width: var(--width);
 		height: var(--width);
+	}
+	button.social-awesome-button > i {
+		font-family: "Font Awesome 6 Brands";
 	}
 	button.social-awesome-button.circle {
 		border-radius: 50%;
@@ -180,5 +189,47 @@
 	button.social-awesome-button:hover {
 		background-position: 100% 100% !important;
 		color: white !important;
+	}
+
+	button.social-awesome-button > .sab-tooltip {
+		/* font-family: serif; */
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 1rem;
+		text-transform: unset;
+		background: #ffffff;
+		color: #ffffff;
+		padding: 5px 8px;
+		border-radius: 5px;
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		width: max-content;
+	}
+
+	button.social-awesome-button > .sab-tooltip::before {
+		position: absolute;
+		content: "";
+		height: 8px;
+		width: 8px;
+		background: #ffffff;
+		bottom: -3px;
+		left: 50%;
+		transform: translate(-50%) rotate(45deg);
+		transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+	button.social-awesome-button:hover > .sab-tooltip {
+		top: -40px;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+	button.social-awesome-button[data-theme="light"]:hover.twitter > .sab-tooltip,
+	button.social-awesome-button[data-theme="light"]:hover.twitter
+		> .sab-tooltip:before {
+		background: var(--twitter);
 	}
 </style>

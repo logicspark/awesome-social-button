@@ -1,7 +1,7 @@
 @import url("assets/fontawesome/css/brands.min.css");
 :root {
-	font-family: "Font Awesome 6 Brands", Inter, system-ui, Avenir, Helvetica,
-		Arial, sans-serif;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif,
+		"Font Awesome 6 Brands";
 	line-height: 1.5;
 	font-weight: 400;
 
@@ -18,10 +18,6 @@
 
 body {
 	margin: 0;
-}
-
-.card {
-	padding: 2em;
 }
 
 #app {

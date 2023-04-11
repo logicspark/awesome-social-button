@@ -14,7 +14,8 @@
 			<social-awesome-button
 				:width="60"
 				type="twitter"
-				:link="{ src: 'https://www.twitter.com/' }" />
+				:link="{ src: 'https://www.twitter.com/' }"
+				tooltip="Twitter Twitter" />
 		</div>
 	</div>
 </template>
