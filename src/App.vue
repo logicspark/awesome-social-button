@@ -6,11 +6,14 @@
 	<div class="container">
 		<div class="dark-wrapper">
 			<social-awesome-button
+				:link="{ src: 'https://www.instagram.com/' }"
 				type="instagram"
 				dark />
 		</div>
 		<div class="light-wrapper">
-			<social-awesome-button type="instagram" />
+			<social-awesome-button
+				type="twitter"
+				:link="{ src: 'https://www.twitter.com/' }" />
 		</div>
 	</div>
 </template>

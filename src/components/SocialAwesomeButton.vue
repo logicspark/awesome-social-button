@@ -2,6 +2,7 @@
 	import { SocialMedia } from ".";
 	interface Props {
 		type: "facebook" | "twitter" | "instagram" | "tiktok" | "google";
+		link: { src: string; target?: HTMLAnchorElement["target"] };
 		shape?: "circle" | "square";
 		dark?: boolean;
 	}
@@ -15,6 +16,7 @@
 </script>
 <template>
 	<button
+		class="social-awesome-button"
 		type="button"
 		role="button"
 		:data-theme="isDark ? 'dark' : 'light'"
@@ -22,10 +24,14 @@
 		<i
 			class="fa-brands"
 			:class="`fa-${type}`"></i>
+		<a
+			:href="props.link.src"
+			:target="props.link.target ?? '_self'"></a>
 	</button>
 </template>
 <style>
 	:root {
+		--google: #ea4335;
 		--facebook: #1877f2;
 		--twitter: #1da1f2;
 		--instagram: #c13584;
@@ -34,7 +40,7 @@
 		--dark: #334155;
 		--light: #fff;
 	}
-	button {
+	button.social-awesome-button {
 		font-family: inherit;
 		box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2),
 			-8px -8px 16px rgba(255, 255, 255, 0.04);
@@ -46,7 +52,14 @@
 		position: relative;
 		transition: background 0.4s, color 0.5s;
 	}
-	button[data-theme="light"].instagram {
+	button.social-awesome-button > a {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	button.social-awesome-button[data-theme="light"].instagram {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -57,7 +70,7 @@
 		background-size: 100% 200%;
 	}
 
-	button[data-theme="dark"].instagram {
+	button.social-awesome-button[data-theme="dark"].instagram {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -68,7 +81,7 @@
 		background-size: 100% 200%;
 	}
 
-	button[data-theme="light"].facebook {
+	button.social-awesome-button[data-theme="light"].facebook {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -79,7 +92,7 @@
 		background-size: 100% 200%;
 	}
 
-	button[data-theme="dark"].facebook {
+	button.social-awesome-button[data-theme="dark"].facebook {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -90,7 +103,7 @@
 		background-size: 100% 200%;
 	}
 
-	button[data-theme="light"].twitter {
+	button.social-awesome-button[data-theme="light"].twitter {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -101,7 +114,7 @@
 		background-size: 100% 200%;
 	}
 
-	button[data-theme="dark"].twitter {
+	button.social-awesome-button[data-theme="dark"].twitter {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -112,7 +125,7 @@
 		background-size: 100% 200%;
 	}
 
-	button[data-theme="light"].tiktok {
+	button.social-awesome-button[data-theme="light"].tiktok {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -123,7 +136,7 @@
 		background-size: 100% 200%;
 	}
 
-	button[data-theme="dark"].tiktok {
+	button.social-awesome-button[data-theme="dark"].tiktok {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -134,7 +147,29 @@
 		background-size: 100% 200%;
 	}
 
-	button:hover {
+	button.social-awesome-button[data-theme="light"].google {
+		color: #36597d;
+		background: linear-gradient(
+			var(--light),
+			var(--light) 50%,
+			var(--google) 50%,
+			var(--google)
+		);
+		background-size: 100% 200%;
+	}
+
+	button.social-awesome-button[data-theme="dark"].google {
+		color: #cdd5e1;
+		background: linear-gradient(
+			var(--dark),
+			var(--dark) 50%,
+			var(--google) 50%,
+			var(--google)
+		);
+		background-size: 100% 200%;
+	}
+
+	button.social-awesome-button:hover {
 		background-position: 100% 100% !important;
 		color: white !important;
 	}
