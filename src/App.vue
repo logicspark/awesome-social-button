@@ -12,6 +12,7 @@
 		</div>
 		<div class="light-wrapper">
 			<social-awesome-button
+				:width="60"
 				type="twitter"
 				:link="{ src: 'https://www.twitter.com/' }" />
 		</div>

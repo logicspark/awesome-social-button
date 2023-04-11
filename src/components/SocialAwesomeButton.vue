@@ -5,6 +5,7 @@
 		link: { src: string; target?: HTMLAnchorElement["target"] };
 		shape?: "circle" | "square";
 		dark?: boolean;
+		width?: number;
 	}
 </script>
 <script setup lang="ts">
@@ -20,7 +21,9 @@
 		type="button"
 		role="button"
 		:data-theme="isDark ? 'dark' : 'light'"
-		:class="[type]">
+		:data-width="props.width ?? '40px'"
+		:class="[type, shape]"
+		:style="{ '--width': `${props.width ?? 40}px` }">
 		<i
 			class="fa-brands"
 			:class="`fa-${type}`"></i>
@@ -39,6 +42,7 @@
 		--transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 		--dark: #334155;
 		--light: #fff;
+		--width: 40px;
 	}
 	button.social-awesome-button {
 		font-family: inherit;
@@ -46,11 +50,15 @@
 			-8px -8px 16px rgba(255, 255, 255, 0.04);
 		border-radius: 8px;
 		border: none;
-		padding: 0.8rem 0.9rem;
-		font-size: 1.2rem;
+		font-size: calc(var(--width) / 2);
 		line-height: 1;
 		position: relative;
 		transition: background 0.4s, color 0.5s;
+		width: var(--width);
+		height: var(--width);
+	}
+	button.social-awesome-button.circle {
+		border-radius: 50%;
 	}
 	button.social-awesome-button > a {
 		position: absolute;
