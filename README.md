@@ -59,13 +59,13 @@ export default {
 
 Here is the attributes of this components that you can set
 
-| Prop     | Type                                                   | Required | Description                                                                        |
-| :------- | :----------------------------------------------------- | :------- | :--------------------------------------------------------------------------------- |
-| `type`   | `facebook`\|`twitter`\|`google`\|`instagram`\|`tiktok` | Yes      | typr of social media                                                               |
-| `link`   | `object`                                               | Yes      | <pre>{ <br> href: string; <br> target?: AnchorHTMLAttributes["target"] <br>}</pre> |
-| `shape`  | `circle`\|`square`                                     | Optional | The shape of button. default is `circle`                                           |
-| `dark`   | `boolean`                                              | Optional | Is it in dark mode or not? default is false                                        |
-| `width`  | `number`                                               | Optional | the dimension of button. default is 40                                             |
-| `tootip` | `string`                                               | Optional | Whether to show tooltip with your message                                          |
+| Prop     | Type                                                   | Required | Description                                                                                                                 |
+| :------- | :----------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| `type`   | `facebook`\|`twitter`\|`google`\|`instagram`\|`tiktok` | Yes      | typr of social media                                                                                                        |
+| `link`   | `object`                                               | Yes      | Link of this button when it is clicked<br><pre>{<br> href: string; <br> target?: AnchorHTMLAttributes["target"] <br>}</pre> |
+| `shape`  | `circle`\|`square`                                     | Optional | The shape of button. default is `circle`                                                                                    |
+| `dark`   | `boolean`                                              | Optional | Is it in dark mode or not? default is false                                                                                 |
+| `width`  | `number`                                               | Optional | the dimension of button. default is 40                                                                                      |
+| `tootip` | `string`                                               | Optional | Whether to show tooltip with your message                                                                                   |
 
 <p align="right">(<a href="#readme-top">back to top</a>)
