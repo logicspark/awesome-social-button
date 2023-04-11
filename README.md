@@ -27,27 +27,52 @@ Dark Mode
 
 https://user-images.githubusercontent.com/85727452/231132204-85bbc399-154c-4bd0-8a00-3648548c697e.mp4
 
+## :building_construction: Built With
+
+Here is a list of frameworks/libraries used to develop Image Resizer
+
+- [![Typescript][TypeScript]][typescript-url]
+- [![Vue][Vue]][vue-url]
+- [![HTML][Html]][html-url]
+- [![CSS][Css]][css-url]
+- [![Jest][Jest]][jest-url]
+
 ## :rocket: Getting Started
 
 Learn what is required before using Social Awesome Button and how to install it quickly. Let's get started!
 
 ### Prerequisite
 
-Let's assumed that you are using Vue3 as your frontend framework for your project. So you can go through your project, and install this library via `npm` or what package manager that you're prefer
+You will need to install Vue 3 in order to use this libary.
 
-```bash
-  cd your-vue-project
-  # npm
+_Note: You may use this library with only HTML & CSS. Please visit our [demo](https://social-awesome-button.logicspark.com) to implement right away._
+
+
+### Installation
+
+There are a few ways you can install Social Awesome Button, namely npm, yarn and pnpm. If you install via npm, here is a a single cmd to install this libarary
+
+```sh
   npm install social-awesome-button
-  # yarn
+```
+
+#### Other options
+
+- yarn
+
+```sh
   yarn add social-awesome-button
-  # pnpm
+```
+
+- pnpm
+
+```sh
   pnpm add social-awesome-button
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
-## :fire: Usage/Examples
+## :fire: Usage
 
 VueJS usage example
 
@@ -86,6 +111,18 @@ Here is the attributes of this components that you can set
 | `tootip` | `string`                                                   | Optional | Whether to show tooltip with your message                                                                                   |
 
 <p align="right">(<a href="#readme-top">back to top</a>)
+  
+  
+[TypeScript]: https://img.shields.io/badge/typescript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[typescript-url]: https://www.typescriptlang.org/
+[Html]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+[html-url]: https://www.w3schools.com/html/
+[Css]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
+[css-url]: https://www.w3schools.com/css/
+[Vue]: https://img.shields.io/badge/vue.js-42B883?style=for-the-badge&logo=vuedotjs&logoColor=white
+[Vue-url]: https://vuejs.org/
+[Jest]: https://img.shields.io/badge/jest-C32C28?style=for-the-badge&logo=jest&logoColor=white
+[jest-url]: https://jestjs.io/
 
 ## :books: License
 
