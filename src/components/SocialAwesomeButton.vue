@@ -2,7 +2,7 @@
 	import { SocialMedia } from ".";
 	interface Props {
 		type: "facebook" | "twitter" | "instagram" | "tiktok" | "google";
-		link: { src: string; target?: HTMLAnchorElement["target"] };
+		link: { href: string; target?: AnchorHTMLAttributes["target"] };
 		shape?: "circle" | "square";
 		dark?: boolean;
 		width?: number;
@@ -10,7 +10,7 @@
 	}
 </script>
 <script setup lang="ts">
-	import { computed } from "vue";
+	import { AnchorHTMLAttributes, computed } from "vue";
 	const props = defineProps<Props>();
 	const type = computed(() => props.type);
 	const shape = computed(() => props.shape ?? "circle");
@@ -34,7 +34,7 @@
 			class="fa-brands"
 			:class="`fa-${type}`"></i>
 		<a
-			:href="props.link.src"
+			:href="props.link.href"
 			:target="props.link.target ?? '_self'"></a>
 	</button>
 </template>

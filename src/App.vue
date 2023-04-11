@@ -6,23 +6,23 @@
 	<div class="container">
 		<div class="dark-wrapper">
 			<social-awesome-button
-				:link="{ src: 'https://www.instagram.com/' }"
+				:link="{ href: 'https://www.instagram.com/', target: '_blank' }"
 				type="instagram"
 				dark />
 			<social-awesome-button
-				:link="{ src: 'https://www.instagram.com/' }"
+				:link="{ href: 'https://www.instagram.com/' }"
 				type="facebook"
 				dark />
 			<social-awesome-button
-				:link="{ src: 'https://www.instagram.com/' }"
+				:link="{ href: 'https://www.instagram.com/' }"
 				type="google"
 				dark />
 			<social-awesome-button
-				:link="{ src: 'https://www.instagram.com/' }"
+				:link="{ href: 'https://www.instagram.com/' }"
 				type="tiktok"
 				dark />
 			<social-awesome-button
-				:link="{ src: 'https://www.instagram.com/' }"
+				:link="{ href: 'https://www.instagram.com/' }"
 				type="twitter"
 				tooltip="Twitter"
 				dark />
@@ -31,27 +31,27 @@
 			<social-awesome-button
 				:width="60"
 				type="twitter"
-				:link="{ src: 'https://www.twitter.com/' }"
+				:link="{ href: 'https://www.twitter.com/' }"
 				tooltip="Twitter" />
 			<social-awesome-button
 				:width="60"
 				type="facebook"
-				:link="{ src: 'https://www.twitter.com/' }"
+				:link="{ href: 'https://www.twitter.com/' }"
 				tooltip="Facebook" />
 			<social-awesome-button
 				:width="50"
 				type="instagram"
-				:link="{ src: 'https://www.twitter.com/' }"
+				:link="{ href: 'https://www.twitter.com/' }"
 				tooltip="Instagram" />
 			<social-awesome-button
 				:width="50"
 				type="tiktok"
-				:link="{ src: 'https://www.twitter.com/' }"
+				:link="{ href: 'https://www.twitter.com/' }"
 				tooltip="tiktok" />
 			<social-awesome-button
 				:width="50"
 				type="google"
-				:link="{ src: 'https://www.twitter.com/' }"
+				:link="{ href: 'https://www.twitter.com/' }"
 				tooltip="Google" />
 		</div>
 	</div>
