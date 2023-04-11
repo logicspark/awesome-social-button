@@ -227,9 +227,26 @@
 		visibility: visible;
 		pointer-events: auto;
 	}
-	button.social-awesome-button[data-theme="light"]:hover.twitter > .sab-tooltip,
-	button.social-awesome-button[data-theme="light"]:hover.twitter
-		> .sab-tooltip:before {
+	button.social-awesome-button[data-theme]:hover.twitter > .sab-tooltip,
+	button.social-awesome-button[data-theme]:hover.twitter > .sab-tooltip:before {
 		background: var(--twitter);
+	}
+	button.social-awesome-button[data-theme]:hover.facebook > .sab-tooltip,
+	button.social-awesome-button[data-theme]:hover.facebook
+		> .sab-tooltip:before {
+		background: var(--facebook);
+	}
+	button.social-awesome-button[data-theme]:hover.google > .sab-tooltip,
+	button.social-awesome-button[data-theme]:hover.google > .sab-tooltip:before {
+		background: var(--google);
+	}
+	button.social-awesome-button[data-theme]:hover.tiktok > .sab-tooltip,
+	button.social-awesome-button[data-theme]:hover.tiktok > .sab-tooltip:before {
+		background: var(--tiktok);
+	}
+	button.social-awesome-button[data-theme]:hover.instagram > .sab-tooltip,
+	button.social-awesome-button[data-theme]:hover.instagram
+		> .sab-tooltip:before {
+		background: var(--instagram);
 	}
 </style>
