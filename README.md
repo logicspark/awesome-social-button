@@ -1,7 +1,5 @@
 <a id="readme-top"></a>
 
-<a name="readme-top"></a>
-
 <div align="center">
   <h1>Social Awesome Button</h1>
 </div>
@@ -18,12 +16,11 @@ Easy to use social media button collection with [VueJS](https://vuejs.org/) inte
   <a href="#books-license">License</a> -
   <a href="#pray-acknowledgement">Acknowledgement</a>
 
+  <br>
   
   [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
   
 </div>
-
-
 
 <br>
 
@@ -41,13 +38,13 @@ https://user-images.githubusercontent.com/85727452/231132204-85bbc399-154c-4bd0-
 
 ## :building_construction: Built With
 
-Here is a list of frameworks/libraries used to develop Image Resizer
+Here is a list of frameworks/libraries used to develop Social Awesome Button
 
-- [![Typescript][TypeScript]][typescript-url]
-- [![Vue][Vue]][vue-url]
-- [![HTML][Html]][html-url]
-- [![CSS][Css]][css-url]
-- [![Jest][Jest]][jest-url]
+- [![Typescript][typescript]][typescript-url]
+- [![Vue][vue]][vue-url]
+- [![HTML][html]][html-url]
+- [![CSS][css]][css-url]
+- [![Jest][jest]][jest-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
@@ -57,10 +54,9 @@ Learn what is required before using Social Awesome Button and how to install it 
 
 ### Prerequisite
 
-You will need to install Vue 3 in order to use this libary.
+This is created base on Vite + Vue3 + TypeScript, So you will need to install this lib inside Vue3 project in order to use this libary. You can also use this lib inside Vue2 but we still don't test it yet.
 
 _Note: You may use this library with only HTML & CSS. Please visit our [demo](https://social-awesome-button.logicspark.com) to implement right away._
-
 
 ### Installation
 
@@ -90,6 +86,8 @@ There are a few ways you can install Social Awesome Button, namely npm, yarn and
 
 VueJS usage example
 
+VueJS without composition API
+
 ```javascript
 <template>
   <div id="app">
@@ -99,7 +97,6 @@ VueJS usage example
     />
   </div>
 </template>
-
 <script>
 import { SocialAwesomeButton } from 'social-awesome-button'
 
@@ -109,6 +106,23 @@ export default {
   },
 }
 </script>
+```
+
+VueJS with composition API
+
+```javascript
+<script setup>
+import { SocialAwesomeButton } from 'social-awesome-button'
+</script>
+<template>
+  <div id="app">
+    <SocialAwesomeButton
+        type="facebook"
+        :link="{ src: 'https://facebook.com'}"
+    />
+  </div>
+</template>
+
 ```
 
 ### Component attributes
@@ -145,7 +159,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)
 
 ## :pray: Acknowledgement
-* [Img Shields](https://shields.io)
-* [Font Awesome](https://fontawesome.com/)
+
+- [Img Shields](https://shields.io)
+- [Font Awesome](https://fontawesome.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)
