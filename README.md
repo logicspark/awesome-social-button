@@ -44,7 +44,7 @@ Here is a list of frameworks/libraries used to develop Social Awesome Button
 - [![Vue][vue]][vue-url]
 - [![HTML][html]][html-url]
 - [![CSS][css]][css-url]
-- [![Jest][jest]][jest-url]
+- [![Vitest][vitest]][vitest-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
@@ -149,8 +149,8 @@ Here is the attributes of this components that you can set
 [css-url]: https://www.w3schools.com/css/
 [Vue]: https://img.shields.io/badge/vue.js-42B883?style=for-the-badge&logo=vuedotjs&logoColor=white
 [Vue-url]: https://vuejs.org/
-[Jest]: https://img.shields.io/badge/jest-C32C28?style=for-the-badge&logo=jest&logoColor=white
-[jest-url]: https://jestjs.io/
+[Vitest]: https://img.shields.io/badge/vitest-edd532?style=for-the-badge&logo=vitest&logoColor=black
+[vitest-url]: https://vitest.dev/
 
 ## :books: License
 
