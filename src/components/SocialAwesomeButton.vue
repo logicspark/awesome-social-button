@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { SocialMedia } from ".";
-	interface Props {
+	export interface Props {
 		type: "facebook" | "twitter" | "instagram" | "tiktok" | "google";
 		link: { href: string; target?: AnchorHTMLAttributes["target"] };
 		shape?: "circle" | "square";
@@ -16,11 +16,11 @@
 	const shape = computed(() => props.shape ?? "circle");
 	const isDark = computed(() => props.dark ?? false);
 	const tooltip = computed(() => props.tooltip);
+	defineExpose(props);
 </script>
 <template>
-	<button
+	<div
 		class="social-awesome-button"
-		type="button"
 		role="button"
 		:data-theme="isDark ? 'dark' : 'light'"
 		:class="[type, shape]"
@@ -36,7 +36,7 @@
 		<a
 			:href="props.link.href"
 			:target="props.link.target ?? '_self'"></a>
-	</button>
+	</div>
 </template>
 <style>
 	:root {

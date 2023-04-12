@@ -14,8 +14,9 @@
 		"noEmit": false,
 		"outDir": "dist",
 		"declaration": true,
-		"types": ["node"]
+		"types": ["node", "vitest/globals"]
 	},
+	// "exclude": ["src/test/*.test.ts"],
 	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }
