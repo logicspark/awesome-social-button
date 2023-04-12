@@ -3,12 +3,14 @@
 <div align="center">
   <h1>Social Awesome Button</h1>
   
+  [comment]: #[![Version](https://img.shields.io/badge/npm-0.0.1-%237FFFD4)]()
+  [![VueJS](https://img.shields.io/badge/VueJS-3.0.x-%2341B883)][vue-url]
   [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/logicspark/social-awesome-button/blob/main/LICENSE)
   
   
 </div>
 
-Easy to use social media button collection with [VueJS](https://vuejs.org/) integration. Developed by [LogicSpark](https://logicspark.com) team
+<p align="center">Easy to use social media button collection with <a href="https://vuejs.org/">VueJS</a> integration. Developed by <a href="https://logicspark.com">LogicSpark</a> team</p>
 
 <br>
 
@@ -153,7 +155,7 @@ Here is the attributes of this components that you can set
 
 ## :books: License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See [`LICENSE`](https://github.com/logicspark/social-awesome-button/blob/main/LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
