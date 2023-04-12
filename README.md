@@ -2,6 +2,10 @@
 
 <div align="center">
   <h1>Social Awesome Button</h1>
+  
+  [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/logicspark/social-awesome-button/blob/main/LICENSE)
+  
+  
 </div>
 
 Easy to use social media button collection with [VueJS](https://vuejs.org/) integration. Developed by [LogicSpark](https://logicspark.com) team
@@ -15,11 +19,6 @@ Easy to use social media button collection with [VueJS](https://vuejs.org/) inte
   <a href="#fire-usage">Usage</a> -
   <a href="#books-license">License</a> -
   <a href="#pray-acknowledgement">Acknowledgement</a>
-
-  <br>
-  
-  [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-  
 </div>
 
 <br>
