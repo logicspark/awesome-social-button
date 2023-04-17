@@ -39,6 +39,7 @@
 	</div>
 </template>
 <style>
+	@import url("/fontawesome/css/brands.min.css");
 	:root {
 		--google: #ea4335;
 		--facebook: #1877f2;
@@ -50,8 +51,7 @@
 		--light: #fff;
 		--width: 40px;
 	}
-	button.social-awesome-button {
-		/* font-family: inherit; */
+	.social-awesome-button {
 		box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2),
 			-8px -8px 16px rgba(255, 255, 255, 0.04);
 		border-radius: 8px;
@@ -63,20 +63,24 @@
 		width: var(--width);
 		height: var(--width);
 	}
-	button.social-awesome-button > i {
+	.social-awesome-button > i {
 		font-family: "Font Awesome 6 Brands";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
 	}
-	button.social-awesome-button.circle {
+	.social-awesome-button.circle {
 		border-radius: 50%;
 	}
-	button.social-awesome-button > a {
+	.social-awesome-button > a {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
 	}
-	button.social-awesome-button[data-theme="light"].instagram {
+	.social-awesome-button[data-theme="light"].instagram {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -87,7 +91,7 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button[data-theme="dark"].instagram {
+	.social-awesome-button[data-theme="dark"].instagram {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -98,7 +102,7 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button[data-theme="light"].facebook {
+	.social-awesome-button[data-theme="light"].facebook {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -109,7 +113,7 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button[data-theme="dark"].facebook {
+	.social-awesome-button[data-theme="dark"].facebook {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -120,7 +124,7 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button[data-theme="light"].twitter {
+	.social-awesome-button[data-theme="light"].twitter {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -131,7 +135,7 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button[data-theme="dark"].twitter {
+	.social-awesome-button[data-theme="dark"].twitter {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -142,7 +146,7 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button[data-theme="light"].tiktok {
+	.social-awesome-button[data-theme="light"].tiktok {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -153,7 +157,7 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button[data-theme="dark"].tiktok {
+	.social-awesome-button[data-theme="dark"].tiktok {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -164,7 +168,7 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button[data-theme="light"].google {
+	.social-awesome-button[data-theme="light"].google {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -175,7 +179,7 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button[data-theme="dark"].google {
+	.social-awesome-button[data-theme="dark"].google {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -186,13 +190,12 @@
 		background-size: 100% 200%;
 	}
 
-	button.social-awesome-button:hover {
+	.social-awesome-button:hover {
 		background-position: 100% 100% !important;
 		color: white !important;
 	}
 
-	button.social-awesome-button > .sab-tooltip {
-		/* font-family: serif; */
+	.social-awesome-button > .sab-tooltip {
 		position: absolute;
 		top: 0;
 		left: 50%;
@@ -210,7 +213,7 @@
 		width: max-content;
 	}
 
-	button.social-awesome-button > .sab-tooltip::before {
+	.social-awesome-button > .sab-tooltip::before {
 		position: absolute;
 		content: "";
 		height: 8px;
@@ -221,32 +224,30 @@
 		transform: translate(-50%) rotate(45deg);
 		transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	}
-	button.social-awesome-button:hover > .sab-tooltip {
+	.social-awesome-button:hover > .sab-tooltip {
 		top: -40px;
 		opacity: 1;
 		visibility: visible;
 		pointer-events: auto;
 	}
-	button.social-awesome-button[data-theme]:hover.twitter > .sab-tooltip,
-	button.social-awesome-button[data-theme]:hover.twitter > .sab-tooltip:before {
+	.social-awesome-button[data-theme]:hover.twitter > .sab-tooltip,
+	.social-awesome-button[data-theme]:hover.twitter > .sab-tooltip:before {
 		background: var(--twitter);
 	}
-	button.social-awesome-button[data-theme]:hover.facebook > .sab-tooltip,
-	button.social-awesome-button[data-theme]:hover.facebook
-		> .sab-tooltip:before {
+	.social-awesome-button[data-theme]:hover.facebook > .sab-tooltip,
+	.social-awesome-button[data-theme]:hover.facebook > .sab-tooltip:before {
 		background: var(--facebook);
 	}
-	button.social-awesome-button[data-theme]:hover.google > .sab-tooltip,
-	button.social-awesome-button[data-theme]:hover.google > .sab-tooltip:before {
+	.social-awesome-button[data-theme]:hover.google > .sab-tooltip,
+	.social-awesome-button[data-theme]:hover.google > .sab-tooltip:before {
 		background: var(--google);
 	}
-	button.social-awesome-button[data-theme]:hover.tiktok > .sab-tooltip,
-	button.social-awesome-button[data-theme]:hover.tiktok > .sab-tooltip:before {
+	.social-awesome-button[data-theme]:hover.tiktok > .sab-tooltip,
+	.social-awesome-button[data-theme]:hover.tiktok > .sab-tooltip:before {
 		background: var(--tiktok);
 	}
-	button.social-awesome-button[data-theme]:hover.instagram > .sab-tooltip,
-	button.social-awesome-button[data-theme]:hover.instagram
-		> .sab-tooltip:before {
+	.social-awesome-button[data-theme]:hover.instagram > .sab-tooltip,
+	.social-awesome-button[data-theme]:hover.instagram > .sab-tooltip:before {
 		background: var(--instagram);
 	}
 </style>
