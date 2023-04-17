@@ -69,6 +69,7 @@
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
+		font-style: inherit;
 	}
 	.social-awesome-button.circle {
 		border-radius: 50%;
