@@ -26,10 +26,10 @@
 		"dist"
 	],
 	"main": "./dist/social-awesome-button.umd.js",
-	"module": "./dist/social-awesome-button.js",
+	"module": "./dist/social-awesome-button.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/social-awesome-button.js",
+			"import": "./dist/social-awesome-button.es.js",
 			"require": "./dist/social-awesome-button.umd.cjs"
 		}
 	},
