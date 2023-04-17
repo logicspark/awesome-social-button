@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { SocialMedia } from ".";
+	import { SocialMediaType } from ".";
 	export interface Props {
-		type: "facebook" | "twitter" | "instagram" | "tiktok" | "google";
+		type: SocialMediaType;
 		link: { href: string; target?: AnchorHTMLAttributes["target"] };
 		shape?: "circle" | "square";
 		dark?: boolean;

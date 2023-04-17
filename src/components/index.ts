@@ -1,7 +1,8 @@
-export enum SocialMedia {
-	facebook = "facebook",
-	twitter = "twitter",
-	instagram = "instagram",
-}
+export type SocialMediaType =
+	| "facebook"
+	| "twitter"
+	| "instagram"
+	| "tiktok"
+	| "google";
 
 export { default as SocialAwesomeButton } from "./SocialAwesomeButton.vue";
