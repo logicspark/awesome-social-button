@@ -17,6 +17,12 @@
 		"types": ["node", "vitest/globals"]
 	},
 	"exclude": ["src/test/*.test.ts"],
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"src/**/*.css"
+	],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }
