@@ -138,7 +138,7 @@ Here is the attributes of this components that you can set
 
 | Prop     | Type                                                       | Required | Description                                                                                                                 |
 | :------- | :--------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| `type`   | `facebook`\|`twitter`\|<br>`google`\|`instagram`\|`tiktok` | Yes      | Examples of social media icons. Click here for more [icons](https://fontawesome.com/search?o=r&m=free&f=brands).                                                                                                      |
+| `type`   | `facebook`\|`twitter`\|<br>`google`\|`instagram`\|`tiktok` | Yes      | Examples of social media icons. Click [here]((https://fontawesome.com/search?o=r&m=free&f=brands)) for more icons.                                                                                                      |
 | `link`   | `object`                                                   | Yes      | Show link of a button when it is clicked<br><pre>{<br> href: string; <br> target?: AnchorHTMLAttributes["target"] <br>}</pre> |
 | `shape`  | `circle`\|`square`                                         | Optional | Button shape. The defaul value is `circle`.                                                                                   |
 | `dark`   | `boolean`                                                  | Optional | Turn on dark mode. The default value is FALSE.                                                                                 |
