@@ -10,8 +10,9 @@
   
 </div>
 
-<p align="center">Easy to use social media button collection with <a href="https://vuejs.org/">VueJS</a> integration. Developed by <a href="https://logicspark.com">LogicSpark</a> team</p>
+<p align=center> Easy to use social media button collection with <a href="https://vuejs.org/">VueJS<a/> integration. Developed by <a href="https://logicspark.com">Logic Spark</a> team. </p>
 
+<p align=center> The social media icons are built using brand font from <a href="https://fontawesome.com/">Font Awesome<a/>. </p>
 <br>
 
 <div align="center">
@@ -55,7 +56,12 @@ Learn what is required before using Social Awesome Button and how to install it 
 
 ### Prerequisite
 
-This is created base on Vite + Vue3 + TypeScript, So you will need to install this lib inside Vue3 project in order to use this libary. You can also use this lib inside Vue2 but we still don't test it yet.
+This is created base on Vite + Vue3 + TypeScript soo you will need to install this lib inside Vue3 project. Vue2 may be supported but it has not been fully tested yet.
+  
+Additionally, you will need to install brand icons from the lastest verion of Font Awesome.
+1. Go to the Font Awesome [download](https://fontawesome.com/download) page
+2. Select "Free for Web" to download
+3. Unzip the downloaded file > Open Webfonts > Select the brand font to install into your Vue3 project
 
 _Note: You may use this library with only HTML & CSS. Please visit our [demo](https://social-awesome-button.logicspark.com) to implement right away._
 
@@ -132,12 +138,12 @@ Here is the attributes of this components that you can set
 
 | Prop     | Type                                                       | Required | Description                                                                                                                 |
 | :------- | :--------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| `type`   | `facebook`\|`twitter`\|<br>`google`\|`instagram`\|`tiktok` | Yes      | typr of social media                                                                                                        |
-| `link`   | `object`                                                   | Yes      | Link of this button when it is clicked<br><pre>{<br> href: string; <br> target?: AnchorHTMLAttributes["target"] <br>}</pre> |
-| `shape`  | `circle`\|`square`                                         | Optional | The shape of button. default is `circle`                                                                                    |
-| `dark`   | `boolean`                                                  | Optional | Is it in dark mode or not? default is false                                                                                 |
-| `width`  | `number`                                                   | Optional | the dimension of button. default is 40                                                                                      |
-| `tootip` | `string`                                                   | Optional | Whether to show tooltip with your message                                                                                   |
+| `type`   | `facebook`\|`twitter`\|<br>`google`\|`instagram`\|`tiktok` | Yes      | Examples of social media icons. Click here for more [icons](https://fontawesome.com/search?o=r&m=free&f=brands).                                                                                                      |
+| `link`   | `object`                                                   | Yes      | Show link of a button when it is clicked<br><pre>{<br> href: string; <br> target?: AnchorHTMLAttributes["target"] <br>}</pre> |
+| `shape`  | `circle`\|`square`                                         | Optional | Button shape. The defaul value is `circle`.                                                                                   |
+| `dark`   | `boolean`                                                  | Optional | Turn on dark mode. The default value is FALSE.                                                                                 |
+| `width`  | `number`                                                   | Optional | The dimension of a button. The default value is 40.                                                                                      |
+| `tootip` | `string`                                                   | Optional | Show or hide a tooltip message                                                                                   |
 
 <p align="right">(<a href="#readme-top">back to top</a>)
   
@@ -156,6 +162,8 @@ Here is the attributes of this components that you can set
 ## :books: License
 
 Distributed under the MIT License. See [`LICENSE`](https://github.com/logicspark/social-awesome-button/blob/main/LICENSE) for more information.
+  
+Free Font Awesome icons are licenses under CC BY 4.0 License while fonts are licensed under SIL OFL 1.1 License. Click [here](https://fontawesome.com/license/free) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
