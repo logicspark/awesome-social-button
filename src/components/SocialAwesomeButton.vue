@@ -10,13 +10,13 @@
 	}
 </script>
 <script setup lang="ts">
-	import { AnchorHTMLAttributes, computed } from "vue";
+	import { AnchorHTMLAttributes, computed, useSlots } from "vue";
 	const props = defineProps<Props>();
 	const type = computed(() => props.type);
 	const shape = computed(() => props.shape ?? "circle");
 	const isDark = computed(() => props.dark ?? false);
 	const tooltip = computed(() => props.tooltip);
-	defineExpose(props);
+	const slots = useSlots();
 </script>
 <template>
 	<div
@@ -26,10 +26,14 @@
 		:class="[type, shape]"
 		:style="{ '--width': `${props.width ?? 40}px` }">
 		<span
-			v-if="tooltip"
-			class="sab-tooltip"
-			>{{ tooltip }}</span
-		>
+			v-if="slots.tooltip || tooltip"
+			class="sab-tooltip">
+			<slot
+				v-if="slots.tooltip"
+				name="tooltip"></slot>
+			<template v-else>{{ tooltip }}</template>
+		</span>
+
 		<i
 			class="fa-brands"
 			:class="`fa-${type}`"></i>
