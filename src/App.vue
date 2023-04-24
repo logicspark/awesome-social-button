@@ -20,7 +20,9 @@
 					</div>
 					<social-awesome-button
 						:link="{ href: 'https://www.instagram.com/' }"
-						type="facebook"
+						type="youtube"
+						color="#BAB55E"
+						tooltip="youtube"
 						dark />
 					<social-awesome-button
 						:link="{ href: 'https://www.instagram.com/' }"

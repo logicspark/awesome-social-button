@@ -1,27 +1,88 @@
 <script lang="ts">
 	import { SocialMediaType } from ".";
-	export interface Props {
-		type: SocialMediaType;
-		link: { href: string; target?: AnchorHTMLAttributes["target"] };
-		shape?: "circle" | "square";
-		dark?: boolean;
-		width?: number;
-		tooltip?: string;
+	export interface LinkType {
+		href: string;
+		target?: AnchorHTMLAttributes["target"];
 	}
+	export type Shape = "circle" | "square";
 </script>
 <script setup lang="ts">
-	import { AnchorHTMLAttributes, computed, useSlots } from "vue";
-	const props = defineProps<Props>();
+	import {
+		AnchorHTMLAttributes,
+		PropType,
+		computed,
+		onMounted,
+		useSlots,
+		ref,
+	} from "vue";
+	const props = defineProps({
+		type: {
+			type: String as PropType<SocialMediaType>,
+			required: true,
+		},
+		link: {
+			type: Object as PropType<LinkType>,
+			required: true,
+		},
+		shape: {
+			type: String as PropType<Shape>,
+			required: false,
+			default: "circle",
+		},
+		dark: {
+			type: Boolean,
+			required: false,
+			default: false,
+		},
+		width: {
+			type: Number,
+			required: false,
+			default: 40,
+		},
+		tooltip: {
+			type: String,
+			required: false,
+		},
+		color: {
+			type: String,
+			required: false,
+			validator(code: string) {
+				const hex = code.split("#").at(-1);
+				return (
+					typeof hex === "string" &&
+					code.startsWith("#") &&
+					hex.length === 6 &&
+					!isNaN(Number("0x" + hex))
+				);
+			},
+		},
+	});
+	const eleRef = ref<HTMLDivElement>();
 	const type = computed(() => props.type);
-	const shape = computed(() => props.shape ?? "circle");
-	const isDark = computed(() => props.dark ?? false);
+	const shape = computed(() => props.shape);
+	const isDark = computed(() => props.dark);
 	const tooltip = computed(() => props.tooltip);
+	const color = computed(() => props.color);
 	const slots = useSlots();
+	onMounted(() => {
+		const element = eleRef.value;
+		if (!element) return;
+		if (color.value) {
+			let c = color.value;
+			element.style.setProperty("--default", c);
+		} else {
+			const c = getComputedStyle(element).getPropertyValue(`--${type.value}`);
+			if (c) {
+				element.style.setProperty("--default", c);
+			}
+		}
+	});
 </script>
 <template>
 	<div
 		class="social-awesome-button"
 		role="button"
+		ref="eleRef"
 		:data-theme="isDark ? 'dark' : 'light'"
 		:class="[type, shape]"
 		:style="{ '--width': `${props.width ?? 40}px` }">
@@ -42,20 +103,19 @@
 			:target="props.link.target ?? '_self'"></a>
 	</div>
 </template>
-<style>
+<style scoped>
 	@import url("/fontawesome/css/brands.min.css");
-	:root {
+	.social-awesome-button {
 		--google: #ea4335;
 		--facebook: #1877f2;
 		--twitter: #1da1f2;
 		--instagram: #c13584;
 		--tiktok: #ee1d52;
+		--default: #1877f2;
 		--transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 		--dark: #334155;
 		--light: #fff;
 		--width: 40px;
-	}
-	.social-awesome-button {
 		box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2),
 			-8px -8px 16px rgba(255, 255, 255, 0.04);
 		border-radius: 8px;
@@ -85,116 +145,26 @@
 		left: 0;
 		right: 0;
 	}
-	.social-awesome-button[data-theme="light"].instagram {
+	.social-awesome-button[data-theme="light"] {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
 			var(--light) 50%,
-			var(--instagram) 50%,
-			var(--instagram)
+			var(--default) 50%,
+			var(--default)
 		);
 		background-size: 100% 200%;
 	}
-
-	.social-awesome-button[data-theme="dark"].instagram {
+	.social-awesome-button[data-theme="dark"] {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
 			var(--dark) 50%,
-			var(--instagram) 50%,
-			var(--instagram)
+			var(--default) 50%,
+			var(--default)
 		);
 		background-size: 100% 200%;
 	}
-
-	.social-awesome-button[data-theme="light"].facebook {
-		color: #36597d;
-		background: linear-gradient(
-			var(--light),
-			var(--light) 50%,
-			var(--facebook) 50%,
-			var(--facebook)
-		);
-		background-size: 100% 200%;
-	}
-
-	.social-awesome-button[data-theme="dark"].facebook {
-		color: #cdd5e1;
-		background: linear-gradient(
-			var(--dark),
-			var(--dark) 50%,
-			var(--facebook) 50%,
-			var(--facebook)
-		);
-		background-size: 100% 200%;
-	}
-
-	.social-awesome-button[data-theme="light"].twitter {
-		color: #36597d;
-		background: linear-gradient(
-			var(--light),
-			var(--light) 50%,
-			var(--twitter) 50%,
-			var(--twitter)
-		);
-		background-size: 100% 200%;
-	}
-
-	.social-awesome-button[data-theme="dark"].twitter {
-		color: #cdd5e1;
-		background: linear-gradient(
-			var(--dark),
-			var(--dark) 50%,
-			var(--twitter) 50%,
-			var(--twitter)
-		);
-		background-size: 100% 200%;
-	}
-
-	.social-awesome-button[data-theme="light"].tiktok {
-		color: #36597d;
-		background: linear-gradient(
-			var(--light),
-			var(--light) 50%,
-			var(--tiktok) 50%,
-			var(--tiktok)
-		);
-		background-size: 100% 200%;
-	}
-
-	.social-awesome-button[data-theme="dark"].tiktok {
-		color: #cdd5e1;
-		background: linear-gradient(
-			var(--dark),
-			var(--dark) 50%,
-			var(--tiktok) 50%,
-			var(--tiktok)
-		);
-		background-size: 100% 200%;
-	}
-
-	.social-awesome-button[data-theme="light"].google {
-		color: #36597d;
-		background: linear-gradient(
-			var(--light),
-			var(--light) 50%,
-			var(--google) 50%,
-			var(--google)
-		);
-		background-size: 100% 200%;
-	}
-
-	.social-awesome-button[data-theme="dark"].google {
-		color: #cdd5e1;
-		background: linear-gradient(
-			var(--dark),
-			var(--dark) 50%,
-			var(--google) 50%,
-			var(--google)
-		);
-		background-size: 100% 200%;
-	}
-
 	.social-awesome-button:hover {
 		background-position: 100% 100% !important;
 		color: white !important;
@@ -235,24 +205,8 @@
 		visibility: visible;
 		pointer-events: auto;
 	}
-	.social-awesome-button[data-theme]:hover.twitter > .sab-tooltip,
-	.social-awesome-button[data-theme]:hover.twitter > .sab-tooltip:before {
-		background: var(--twitter);
-	}
-	.social-awesome-button[data-theme]:hover.facebook > .sab-tooltip,
-	.social-awesome-button[data-theme]:hover.facebook > .sab-tooltip:before {
-		background: var(--facebook);
-	}
-	.social-awesome-button[data-theme]:hover.google > .sab-tooltip,
-	.social-awesome-button[data-theme]:hover.google > .sab-tooltip:before {
-		background: var(--google);
-	}
-	.social-awesome-button[data-theme]:hover.tiktok > .sab-tooltip,
-	.social-awesome-button[data-theme]:hover.tiktok > .sab-tooltip:before {
-		background: var(--tiktok);
-	}
-	.social-awesome-button[data-theme]:hover.instagram > .sab-tooltip,
-	.social-awesome-button[data-theme]:hover.instagram > .sab-tooltip:before {
-		background: var(--instagram);
+	.social-awesome-button[data-theme]:hover > .sab-tooltip,
+	.social-awesome-button[data-theme]:hover > .sab-tooltip:before {
+		background: var(--default);
 	}
 </style>
