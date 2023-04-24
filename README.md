@@ -12,7 +12,7 @@
 
 <p align=center> Easy to use social media button collection with <a href="https://vuejs.org/">VueJS<a/> integration. Developed by <a href="https://logicspark.com">Logic Spark</a> team. </p>
 
-<p align=center> The social media icons are from brand font of <a href="https://fontawesome.com/">Font Awesome<a/>. </p>
+<p align=center> The social media icons are from free brand font of <a href="https://fontawesome.com/">Font Awesome<a/>. </p>
 <br>
 
 <div align="center">
@@ -59,6 +59,7 @@ Learn what is required before using Social Awesome Button and how to install it 
 This is created base on Vite + Vue3 + TypeScript so you will need to install this lib inside Vue3 project. Vue2 may be supported but it has not been fully tested yet.
   
 Additionally, you will need to install brand icons from the lastest verion of Font Awesome.
+
 1. Go to the Font Awesome [download](https://fontawesome.com/download) page
 2. Select "Free for Web" to download
 3. Unzip the downloaded file > Open Webfonts > Select the brand font to install into your Vue3 project
