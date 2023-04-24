@@ -3,7 +3,7 @@
 <div align="center">
   <h1>Social Awesome Button</h1>
   
-  [comment]: #[![Version](https://img.shields.io/badge/npm-0.0.1-%237FFFD4)]()
+  [![npm](https://img.shields.io/npm/v/social-awesome-button)][package-url]
   [![VueJS](https://img.shields.io/badge/VueJS-3.0.x-%2341B883)][vue-url]
   [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/logicspark/social-awesome-button/blob/main/LICENSE)
   
@@ -158,6 +158,7 @@ Here is the attributes of this components that you can set
 [Vue-url]: https://vuejs.org/
 [Vitest]: https://img.shields.io/badge/vitest-edd532?style=for-the-badge&logo=vitest&logoColor=black
 [vitest-url]: https://vitest.dev/
+[package-url]: https://www.npmjs.com/package/social-awesome-button
 
 ## :books: License
 
