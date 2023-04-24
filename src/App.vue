@@ -11,14 +11,16 @@
 						<social-awesome-button
 							:link="{ href: 'https://www.instagram.com/', target: '_blank' }"
 							type="instagram"
-							tooltip="Instagram"
 							:width="55"
-							dark />
+							dark>
+							<template #tooltip>
+								<i style="color: yellow">Instagram</i>
+							</template>
+						</social-awesome-button>
 					</div>
 					<social-awesome-button
 						:link="{ href: 'https://www.instagram.com/' }"
 						type="facebook"
-						tooltip="Facebook"
 						dark />
 					<social-awesome-button
 						:link="{ href: 'https://www.instagram.com/' }"
