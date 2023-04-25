@@ -12,7 +12,7 @@
 
 <p align=center> Easy to use social media button collection with <a href="https://vuejs.org/">VueJS<a/> integration. Developed by <a href="https://logicspark.com">Logic Spark</a> team. </p>
 
-<p align=center> The social media icons are built using brand font from <a href="https://fontawesome.com/">Font Awesome<a/>. </p>
+<p align=center> The social media icons are from free brand font of <a href="https://fontawesome.com/">Font Awesome<a/>. </p>
 <br>
 
 <div align="center">
@@ -56,9 +56,10 @@ Learn what is required before using Social Awesome Button and how to install it 
 
 ### Prerequisite
 
-This is created base on Vite + Vue3 + TypeScript soo you will need to install this lib inside Vue3 project. Vue2 may be supported but it has not been fully tested yet.
+This is created base on Vite + Vue3 + TypeScript so you will need to install this lib inside Vue3 project. Vue2 may be supported but it has not been fully tested yet.
   
 Additionally, you will need to install brand icons from the lastest verion of Font Awesome.
+
 1. Go to the Font Awesome [download](https://fontawesome.com/download) page
 2. Select "Free for Web" to download
 3. Unzip the downloaded file > Open Webfonts > Select the brand font to install into your Vue3 project
@@ -131,6 +132,8 @@ import { SocialAwesomeButton } from 'social-awesome-button'
 </template>
 
 ```
+_Note: At the moment, the social icons are fixed at 10. For each social icon, there is a default background color which can be changed._
+
 
 ### Component attributes
 
@@ -138,7 +141,7 @@ Here is the attributes of this components that you can set
 
 | Prop     | Type                                                       | Required | Description                                                                                                                 |
 | :------- | :--------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| `type`   | `facebook`\|`twitter`\|<br>`google`\|`instagram`\|`tiktok` | Yes      | Examples of social media icons. Click [here]((https://fontawesome.com/search?o=r&m=free&f=brands)) for more icons.                                                                                                      |
+| `type`   | `facebook`\|`twitter`\|<br>`google`\|`instagram`\|`tiktok` | Yes      | 10 Social media icons that can be used.                                                                                                      |
 | `link`   | `object`                                                   | Yes      | Show link of a button when it is clicked<br><pre>{<br> href: string; <br> target?: AnchorHTMLAttributes["target"] <br>}</pre> |
 | `shape`  | `circle`\|`square`                                         | Optional | Button shape. The defaul value is `circle`.                                                                                   |
 | `dark`   | `boolean`                                                  | Optional | Turn on dark mode. The default value is FALSE.                                                                                 |
