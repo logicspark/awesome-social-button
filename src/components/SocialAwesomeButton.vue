@@ -111,6 +111,11 @@
 		--twitter: #1da1f2;
 		--instagram: #c13584;
 		--tiktok: #ee1d52;
+		--pinterest: #e60023;
+		--youtube: #ff0000;
+		--linkedin: #0077b5;
+		--whatsapp: #25d366;
+		--snapchat: #fffc00;
 		--default: #1877f2;
 		--transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 		--dark: #334155;
@@ -169,6 +174,9 @@
 		background-position: 100% 100% !important;
 		color: white !important;
 	}
+	.social-awesome-button:hover i.fa-snapchat {
+		color: black !important;
+	}
 
 	.social-awesome-button > .sab-tooltip {
 		position: absolute;
@@ -208,5 +216,8 @@
 	.social-awesome-button[data-theme]:hover > .sab-tooltip,
 	.social-awesome-button[data-theme]:hover > .sab-tooltip:before {
 		background: var(--default);
+	}
+	.social-awesome-button.snapchat > .sab-tooltip {
+		color: #000;
 	}
 </style>

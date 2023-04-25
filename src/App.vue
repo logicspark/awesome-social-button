@@ -10,18 +10,17 @@
 					<div class="d-flex flex-column">
 						<social-awesome-button
 							:link="{ href: 'https://www.instagram.com/', target: '_blank' }"
-							type="instagram"
+							type="snapchat"
 							:width="55"
 							dark>
 							<template #tooltip>
-								<i style="color: yellow">Instagram</i>
+								<i style="color: blue">Instagram</i>
 							</template>
 						</social-awesome-button>
 					</div>
 					<social-awesome-button
 						:link="{ href: 'https://www.instagram.com/' }"
-						type="youtube"
-						color="#BAB55E"
+						type="whatsapp"
 						tooltip="youtube"
 						dark />
 					<social-awesome-button
@@ -45,7 +44,7 @@
 				<div class="d-flex align-items-center justify-content-around h-100">
 					<social-awesome-button
 						:width="60"
-						type="twitter"
+						type="snapchat"
 						:link="{ href: 'https://www.twitter.com/' }"
 						tooltip="Twitter" />
 					<social-awesome-button
