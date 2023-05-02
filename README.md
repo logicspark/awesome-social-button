@@ -30,11 +30,12 @@
 
 Light Mode
 
-https://user-images.githubusercontent.com/85727452/231132870-aeabb39e-5f24-4656-a5e2-a0cd28562fba.mp4
+https://user-images.githubusercontent.com/85727452/235587977-2163b465-cc6f-44fe-a767-dd5029fe2974.mov
+
 
 Dark Mode
 
-https://user-images.githubusercontent.com/85727452/231132204-85bbc399-154c-4bd0-8a00-3648548c697e.mp4
+https://user-images.githubusercontent.com/85727452/235587690-25eb7e6c-08dd-4c85-8818-98cb8308046b.mov
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
@@ -141,12 +142,13 @@ Here is the attributes of this components that you can set
 
 | Prop     | Type                                                       | Required | Description                                                                                                                 |
 | :------- | :--------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| `type`   | `facebook`\|`twitter`\|<br>`google`\|`instagram`\|`tiktok` | Yes      | 10 Social media icons that can be used.                                                                                                      |
+| `type`   | `facebook`\|`twitter`\|`tiktok`\|<br>`instagram`\|`linkedin`\|`youtube`\|<br>`google`\|`pinterest`\|`snapchat`\|<br>`youtube`\|`whatsapp` | Yes      | 10 Social media icons that can be used. |
 | `link`   | `object`                                                   | Yes      | Show link of a button when it is clicked<br><pre>{<br> href: string; <br> target?: AnchorHTMLAttributes["target"] <br>}</pre> |
 | `shape`  | `circle`\|`square`                                         | Optional | Button shape. The defaul value is `circle`.                                                                                   |
 | `dark`   | `boolean`                                                  | Optional | Turn on dark mode. The default value is FALSE.                                                                                 |
-| `width`  | `number`                                                   | Optional | The dimension of a button. The default value is 40.                                                                                      |
-| `tootip` | `string`                                                   | Optional | Show or hide a tooltip message                                                                                   |
+| `width`  | `number`                                                   | Optional | The dimension of a button. The default value is 40.                                                                           |
+| `color`  | `string`                                                   | Optional | The background color of a button, and if it's not specified, the button will use the default brand color. |
+| `tooltip` | `string`                                                   | Optional | Show or hide a tooltip message                                                                                   |
 
 <p align="right">(<a href="#readme-top">back to top</a>)
   
@@ -173,7 +175,7 @@ Free Font Awesome icons are licenses under CC BY 4.0 License while fonts are lic
 
 ## :pray: Acknowledgement
 
-- [Img Shields](https://shields.io)
 - [Font Awesome](https://fontawesome.com/)
+- [Img Shields](https://shields.io)
 
 <p align="right">(<a href="#readme-top">back to top</a>)
