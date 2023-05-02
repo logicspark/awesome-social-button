@@ -145,8 +145,9 @@ Here is the attributes of this components that you can set
 | `link`   | `object`                                                   | Yes      | Show link of a button when it is clicked<br><pre>{<br> href: string; <br> target?: AnchorHTMLAttributes["target"] <br>}</pre> |
 | `shape`  | `circle`\|`square`                                         | Optional | Button shape. The defaul value is `circle`.                                                                                   |
 | `dark`   | `boolean`                                                  | Optional | Turn on dark mode. The default value is FALSE.                                                                                 |
-| `width`  | `number`                                                   | Optional | The dimension of a button. The default value is 40.                                                                                      |
-| `tootip` | `string`                                                   | Optional | Show or hide a tooltip message                                                                                   |
+| `width`  | `number`                                                   | Optional | The dimension of a button. The default value is 40.                                                                           |
+| `color`  | `string`                                                   | Optional | The background color of a button, and if it's not specified, the button will use the default brand color. |
+| `tooltip` | `string`                                                   | Optional | Show or hide a tooltip message                                                                                   |
 
 <p align="right">(<a href="#readme-top">back to top</a>)
   
