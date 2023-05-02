@@ -30,11 +30,12 @@
 
 Light Mode
 
-https://user-images.githubusercontent.com/85727452/231132870-aeabb39e-5f24-4656-a5e2-a0cd28562fba.mp4
+https://user-images.githubusercontent.com/85727452/235587977-2163b465-cc6f-44fe-a767-dd5029fe2974.mov
+
 
 Dark Mode
 
-https://user-images.githubusercontent.com/85727452/231132204-85bbc399-154c-4bd0-8a00-3648548c697e.mp4
+https://user-images.githubusercontent.com/85727452/235587690-25eb7e6c-08dd-4c85-8818-98cb8308046b.mov
 
 <p align="right">(<a href="#readme-top">back to top</a>)
 
@@ -174,7 +175,7 @@ Free Font Awesome icons are licenses under CC BY 4.0 License while fonts are lic
 
 ## :pray: Acknowledgement
 
-- [Img Shields](https://shields.io)
 - [Font Awesome](https://fontawesome.com/)
+- [Img Shields](https://shields.io)
 
 <p align="right">(<a href="#readme-top">back to top</a>)
