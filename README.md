@@ -1,3 +1,5 @@
+<a id="readme-top"></a>
+
 <div align="center">
   <h1>Social Awesome Button</h1>
   
@@ -12,7 +14,7 @@
 
 <p align=center> The social media icons are from free brand font of <a href="https://fontawesome.com/">Font Awesome<a/>. </p>
 <br>
-<a id="readme-top"></a>
+
 <div align="center">
   <a href="#sunglasses-screenshots">Screenshots</a> - 
   <a href="#building_construction-built-with">Built With</a> - 
