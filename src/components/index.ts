@@ -3,6 +3,11 @@ export type SocialMediaType =
 	| "twitter"
 	| "instagram"
 	| "tiktok"
-	| "google";
+	| "google"
+	| "youtube"
+	| "linkedin"
+	| "whatsapp"
+	| "snapchat"
+	| "pinterest";
 
 export { default as SocialAwesomeButton } from "./SocialAwesomeButton.vue";
