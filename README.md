@@ -64,7 +64,7 @@ Additionally, you will need to install brand icons from the lastest verion of Fo
 2. Select "Free for Web" to download
 3. Unzip the downloaded file > Open Webfonts > Select the brand font to install into your Vue3 project
 
-_Note: You may use this library with only HTML & CSS. Please visit our [demo](https://awesome-social-button.logicspark.com) to implement right away._
+_Note: You may use this library with only HTML & CSS. Please visit our [demo](https://asb.logicspark.com) to implement right away._
 
 ### Installation
 
