@@ -1,18 +1,18 @@
 {
-	"name": "social-awesome-button",
+	"name": "awesome-social-button",
 	"private": false,
 	"description": "Easy to use social media button collection with VueJS intregation.",
 	"version": "0.3.2",
 	"license": "MIT",
 	"author": "LogicSpark <info@logicspark.com>",
 	"homepage": "https://logicspark.com",
-	"url": "https://github.com/logicspark/social-awesome-button",
+	"url": "https://github.com/logicspark/awesome-social-button",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/logicspark/social-awesome-button.git"
+		"url": "https://github.com/logicspark/awesome-social-button.git"
 	},
 	"bugs": {
-		"url": "https://github.com/logicspark/social-awesome-button/issues"
+		"url": "https://github.com/logicspark/awesome-social-button/issues"
 	},
 	"keywords": [
 		"awesome button",
@@ -26,12 +26,12 @@
 	"files": [
 		"dist"
 	],
-	"main": "./dist/social-awesome-button.umd.js",
-	"module": "./dist/social-awesome-button.es.js",
+	"main": "./dist/awesome-social-button.umd.js",
+	"module": "./dist/awesome-social-button.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/social-awesome-button.es.js",
-			"require": "./dist/social-awesome-button.umd.cjs"
+			"import": "./dist/awesome-social-button.es.js",
+			"require": "./dist/awesome-social-button.umd.cjs"
 		}
 	},
 	"scripts": {
