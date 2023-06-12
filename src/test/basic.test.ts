@@ -1,14 +1,14 @@
 import { mount } from "@vue/test-utils";
-import SocialAwesomeButton from "../components/SocialAwesomeButton.vue";
-import type { Props } from "../components/SocialAwesomeButton.vue";
+import AwesomeSocialButton from "../components/AwesomeSocialButton.vue";
+import type { Props } from "../components/AwesomeSocialButton.vue";
 
 test("mount component", async () => {
-	expect(SocialAwesomeButton).toBeTruthy();
+	expect(AwesomeSocialButton).toBeTruthy();
 	const props = {
 		type: "twitter",
 		link: { href: "#" },
 	} as Props;
-	const wrapper = mount(SocialAwesomeButton, {
+	const wrapper = mount(AwesomeSocialButton, {
 		props,
 	});
 	const element = wrapper.get(".social-awesome-button");

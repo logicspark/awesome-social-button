@@ -16,8 +16,8 @@ export default defineConfig({
 		target: "esnext",
 		lib: {
 			entry: resolve(__dirname, "src/components/index.ts"),
-			name: "SocialAwesomeButton",
-			fileName: (format) => `social-awesome-button.${format}.js`,
+			name: "AwesomeSocialButton",
+			fileName: (format) => `awesome-social-button.${format}.js`,
 		},
 		rollupOptions: {
 			// make sure to externalize deps that shouldn't be bundled

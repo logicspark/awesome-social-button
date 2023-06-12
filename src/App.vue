@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import { SocialAwesomeButton } from "./components";
+	import { AwesomeSocialButton } from "./components";
 </script>
 
 <template>

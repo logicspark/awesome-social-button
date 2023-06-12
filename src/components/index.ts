@@ -10,4 +10,4 @@ export type SocialMediaType =
 	| "snapchat"
 	| "pinterest";
 
-export { default as SocialAwesomeButton } from "./SocialAwesomeButton.vue";
+export { default as AwesomeSocialButton } from "./AwesomeSocialButton.vue";
