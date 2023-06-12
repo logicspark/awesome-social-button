@@ -1,11 +1,11 @@
 <a id="readme-top"></a>
 
 <div align="center">
-  <h1>Social Awesome Button</h1>
+  <h1>Awesome Social Button</h1>
   
-  [![npm](https://img.shields.io/npm/v/social-awesome-button)][package-url]
+  [![npm](https://img.shields.io/npm/v/awesome-social-button)][package-url]
   [![VueJS](https://img.shields.io/badge/VueJS-3.0.x-%2341B883)][vue-url]
-  [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/logicspark/social-awesome-button/blob/main/LICENSE)
+  [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/logicspark/awesome-social-button/blob/main/LICENSE)
   
   
 </div>
@@ -64,14 +64,14 @@ Additionally, you will need to install brand icons from the lastest verion of Fo
 2. Select "Free for Web" to download
 3. Unzip the downloaded file > Open Webfonts > Select the brand font to install into your Vue3 project
 
-_Note: You may use this library with only HTML & CSS. Please visit our [demo](https://social-awesome-button.logicspark.com) to implement right away._
+_Note: You may use this library with only HTML & CSS. Please visit our [demo](https://awesome-social-button.logicspark.com) to implement right away._
 
 ### Installation
 
 There are a few ways you can install Social Awesome Button, namely npm, yarn and pnpm. If you install via npm, here is a a single cmd to install this libarary
 
 ```sh
-  npm install social-awesome-button
+  npm install awesome-social-button
 ```
 
 #### Other options
@@ -79,13 +79,13 @@ There are a few ways you can install Social Awesome Button, namely npm, yarn and
 - yarn
 
 ```sh
-  yarn add social-awesome-button
+  yarn add awesome-social-button
 ```
 
 - pnpm
 
 ```sh
-  pnpm add social-awesome-button
+  pnpm add awesome-social-button
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)
@@ -99,18 +99,18 @@ VueJS without composition API
 ```javascript
 <template>
   <div id="app">
-    <social-awesome-button
+    <awesome-social-button
         type="facebook"
         :link="{ src: 'https://facebook.com'}"
     />
   </div>
 </template>
 <script>
-import { SocialAwesomeButton } from 'social-awesome-button'
+import { AwesomeSocialButton } from 'awesome-social-button'
 
 export default {
   components: {
-    SocialAwesomeButton,
+    AwesomeSocialButton,
   },
 }
 </script>
@@ -120,11 +120,11 @@ VueJS with composition API
 
 ```javascript
 <script setup>
-import { SocialAwesomeButton } from 'social-awesome-button'
+import { AwesomeSocialButton } from 'awesome-social-button'
 </script>
 <template>
   <div id="app">
-    <SocialAwesomeButton
+    <AwesomeSocialButton
         type="facebook"
         :link="{ src: 'https://facebook.com'}"
     />
@@ -162,11 +162,11 @@ Here is the attributes of this components that you can set
 [Vue-url]: https://vuejs.org/
 [Vitest]: https://img.shields.io/badge/vitest-edd532?style=for-the-badge&logo=vitest&logoColor=black
 [vitest-url]: https://vitest.dev/
-[package-url]: https://www.npmjs.com/package/social-awesome-button
+[package-url]: https://www.npmjs.com/package/awesome-social-button
 
 ## :books: License
 
-Distributed under the MIT License. See [`LICENSE`](https://github.com/logicspark/social-awesome-button/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [`LICENSE`](https://github.com/logicspark/awesome-social-button/blob/main/LICENSE) for more information.
 
 Free Font Awesome icons are licenses under CC BY 4.0 License while fonts are licensed under SIL OFL 1.1 License. Click [here](https://fontawesome.com/license/free) for more information.
 
