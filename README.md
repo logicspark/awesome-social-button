@@ -40,7 +40,7 @@ https://user-images.githubusercontent.com/85727452/235587690-25eb7e6c-08dd-4c85-
 
 ## :building_construction: Built With
 
-Here is a list of frameworks/libraries used to develop Social Awesome Button
+Here is a list of frameworks/libraries used to develop Awesome Social Button
 
 - [![Typescript][typescript]][typescript-url]
 - [![Vue][vue]][vue-url]
@@ -52,7 +52,7 @@ Here is a list of frameworks/libraries used to develop Social Awesome Button
 
 ## :rocket: Getting Started
 
-Learn what is required before using Social Awesome Button and how to install it quickly. Let's get started!
+Learn what is required before using Awesome Social Button and how to install it quickly. Let's get started!
 
 ### Prerequisite
 
@@ -68,7 +68,7 @@ _Note: You may use this library with only HTML & CSS. Please visit our [demo](ht
 
 ### Installation
 
-There are a few ways you can install Social Awesome Button, namely npm, yarn and pnpm. If you install via npm, here is a a single cmd to install this libarary
+There are a few ways you can install Awesome Social Button, namely npm, yarn and pnpm. If you install via npm, here is a a single cmd to install this libarary
 
 ```sh
   npm install awesome-social-button
