@@ -11,7 +11,7 @@ test("mount component", async () => {
 	const wrapper = mount(AwesomeSocialButton, {
 		props,
 	});
-	const element = wrapper.get(".social-awesome-button");
+	const element = wrapper.get(".awesome-social-button");
 
 	expect(element).toBeDefined();
 	expect(element.classes().length).toEqual(3);

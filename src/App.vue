@@ -8,7 +8,7 @@
 			<div class="col dark-wrapper">
 				<div class="d-flex align-items-center justify-content-around h-100">
 					<div class="d-flex flex-column">
-						<social-awesome-button
+						<awesome-social-button
 							:link="{ href: 'https://www.instagram.com/', target: '_blank' }"
 							type="snapchat"
 							:width="55"
@@ -16,24 +16,24 @@
 							<template #tooltip>
 								<i style="color: blue">Instagram</i>
 							</template>
-						</social-awesome-button>
+						</awesome-social-button>
 					</div>
-					<social-awesome-button
+					<awesome-social-button
 						:link="{ href: 'https://www.instagram.com/' }"
 						type="whatsapp"
 						tooltip="youtube"
 						dark />
-					<social-awesome-button
+					<awesome-social-button
 						:link="{ href: 'https://www.instagram.com/' }"
 						type="google"
 						tooltip="Google"
 						dark />
-					<social-awesome-button
+					<awesome-social-button
 						:link="{ href: 'https://www.instagram.com/' }"
 						type="tiktok"
 						tooltip="Tiktok"
 						dark />
-					<social-awesome-button
+					<awesome-social-button
 						:link="{ href: 'https://www.instagram.com/' }"
 						type="twitter"
 						tooltip="Twitter"
@@ -42,27 +42,27 @@
 			</div>
 			<div class="col light-wrapper">
 				<div class="d-flex align-items-center justify-content-around h-100">
-					<social-awesome-button
+					<awesome-social-button
 						:width="60"
 						type="snapchat"
 						:link="{ href: 'https://www.twitter.com/' }"
 						tooltip="Twitter" />
-					<social-awesome-button
+					<awesome-social-button
 						:width="60"
 						type="facebook"
 						:link="{ href: 'https://www.twitter.com/' }"
 						tooltip="Facebook" />
-					<social-awesome-button
+					<awesome-social-button
 						:width="50"
 						type="instagram"
 						:link="{ href: 'https://www.twitter.com/' }"
 						tooltip="Instagram" />
-					<social-awesome-button
+					<awesome-social-button
 						:width="50"
 						type="tiktok"
 						:link="{ href: 'https://www.twitter.com/' }"
 						tooltip="tiktok" />
-					<social-awesome-button
+					<awesome-social-button
 						:width="50"
 						type="google"
 						:link="{ href: 'https://www.twitter.com/' }"

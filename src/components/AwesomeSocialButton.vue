@@ -80,7 +80,7 @@
 </script>
 <template>
 	<div
-		class="social-awesome-button"
+		class="awesome-social-button"
 		role="button"
 		ref="eleRef"
 		:data-theme="isDark ? 'dark' : 'light'"
@@ -105,7 +105,7 @@
 </template>
 <style scoped>
 	@import url("/fontawesome/css/brands.min.css");
-	.social-awesome-button {
+	.awesome-social-button {
 		--google: #ea4335;
 		--facebook: #1877f2;
 		--twitter: #1da1f2;
@@ -132,7 +132,7 @@
 		width: var(--width);
 		height: var(--width);
 	}
-	.social-awesome-button > i {
+	.awesome-social-button > i {
 		font-family: "Font Awesome 6 Brands";
 		position: absolute;
 		left: 50%;
@@ -140,17 +140,17 @@
 		transform: translate(-50%, -50%);
 		font-style: inherit;
 	}
-	.social-awesome-button.circle {
+	.awesome-social-button.circle {
 		border-radius: 50%;
 	}
-	.social-awesome-button > a {
+	.awesome-social-button > a {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
 	}
-	.social-awesome-button[data-theme="light"] {
+	.awesome-social-button[data-theme="light"] {
 		color: #36597d;
 		background: linear-gradient(
 			var(--light),
@@ -160,7 +160,7 @@
 		);
 		background-size: 100% 200%;
 	}
-	.social-awesome-button[data-theme="dark"] {
+	.awesome-social-button[data-theme="dark"] {
 		color: #cdd5e1;
 		background: linear-gradient(
 			var(--dark),
@@ -170,15 +170,15 @@
 		);
 		background-size: 100% 200%;
 	}
-	.social-awesome-button:hover {
+	.awesome-social-button:hover {
 		background-position: 100% 100% !important;
 		color: white !important;
 	}
-	.social-awesome-button:hover i.fa-snapchat {
+	.awesome-social-button:hover i.fa-snapchat {
 		color: black !important;
 	}
 
-	.social-awesome-button > .sab-tooltip {
+	.awesome-social-button > .sab-tooltip {
 		position: absolute;
 		top: 0;
 		left: 50%;
@@ -196,7 +196,7 @@
 		width: max-content;
 	}
 
-	.social-awesome-button > .sab-tooltip::before {
+	.awesome-social-button > .sab-tooltip::before {
 		position: absolute;
 		content: "";
 		height: 8px;
@@ -207,17 +207,17 @@
 		transform: translate(-50%) rotate(45deg);
 		transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	}
-	.social-awesome-button:hover > .sab-tooltip {
+	.awesome-social-button:hover > .sab-tooltip {
 		top: -40px;
 		opacity: 1;
 		visibility: visible;
 		pointer-events: auto;
 	}
-	.social-awesome-button[data-theme]:hover > .sab-tooltip,
-	.social-awesome-button[data-theme]:hover > .sab-tooltip:before {
+	.awesome-social-button[data-theme]:hover > .sab-tooltip,
+	.awesome-social-button[data-theme]:hover > .sab-tooltip:before {
 		background: var(--default);
 	}
-	.social-awesome-button.snapchat > .sab-tooltip {
+	.awesome-social-button.snapchat > .sab-tooltip {
 		color: #000;
 	}
 </style>
