@@ -2,7 +2,7 @@
 	"name": "awesome-social-button",
 	"private": false,
 	"description": "Easy to use social media button collection with VueJS intregation.",
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"license": "MIT",
 	"author": "LogicSpark <info@logicspark.com>",
 	"homepage": "https://logicspark.com",
